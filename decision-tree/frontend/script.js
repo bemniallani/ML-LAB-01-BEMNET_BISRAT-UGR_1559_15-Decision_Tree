@@ -4,7 +4,7 @@ document.addEventListener('DOMContentLoaded', function() {
     const resultContainer = document.getElementById('resultContainer');
     const loader = document.getElementById('loader');
 
-    const API_URL = 'http://localhost:8002'; 
+    const API_URL = 'https://ml-lab-01-bemnet-bisrat-ugr-1559-15-q1br.onrender.com'; 
 
     form.addEventListener('submit', async function(e) {
         e.preventDefault();
@@ -67,4 +67,5 @@ document.addEventListener('DOMContentLoaded', function() {
             riskText.textContent = "Low probability of diabetes detected.";
         }
     }
+
 });
