@@ -17,7 +17,7 @@ app.add_middleware(
 
 # Load the Decision Tree model
 try:
-    model = joblib.load(r"C:\Users\786\Desktop\decision-tree\backend\model\decision_tree.joblib")
+    model = joblib.load(r"C:\Users\786\Desktop\decision-tree\backend\decision_tree.joblib")
     print("✅ Decision Tree model loaded successfully!")
 except Exception as e:
     print(f"❌ Error loading model: {e}")
@@ -88,4 +88,5 @@ def predict(data: PatientData):
 
 if __name__ == "__main__":
     import uvicorn
+
     uvicorn.run(app, host="0.0.0.0", port=8002)
